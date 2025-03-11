@@ -80,8 +80,12 @@ Parámetro	Descripción
 -d/--domain	Dominio para los correos (requerido)
 
 -p/--payload	Formato personalizado (ej: [ABC][lastname])
+
 -t/--template	Plantilla predefinida (firstlast, first.last)
+
 -o/--output	Archivo de salida (.txt, .csv, .json)
+
 --mask	Enmascara los correos generados
+
 --max-results	Límite de resultados a generar
 
