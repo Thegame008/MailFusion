@@ -72,7 +72,6 @@ python mailfusion.py -d sistema.com -p '[ABC:2][year]["_"][123:4]' -o datos.json
 
 🔧 Parámetros Principales
 
-Parámetro	  Descripción
 
 -n/--names	Archivo con nombres (uno por línea)
 
