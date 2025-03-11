@@ -42,32 +42,33 @@ pip install -r requirements.txt
 
 # Dar permisos de ejecución
 chmod +x mailfusion.py
-
+```
 
 🚀 Uso Básico
-bash
-Copy
+```bash
 # Mostrar ayuda completa
 python mailfusion.py -h
-
+```
 # Ejemplo básico con apellidos
+```bash
 python mailfusion.py -l apellidos.txt -d empresa.com -p '[ABC][lastname]'
-
+```
 # Usar plantilla predefinida
 python mailfusion.py -n nombres.txt -l apellidos.txt -d empresa.com -t first.last
 🎯 Ejemplos Avanzados
 1. Generar usuarios corporativos
-bash
-Copy
+```bash
 python mailfusion.py -n empleados.txt -d corporacion.com -p '[name][".123"]' --case lower -o usuarios.csv
-2. Combinaciones con seguridad
-bash
-Copy
+```
+3. Combinaciones con seguridad
+```bash
 python mailfusion.py -l clientes.txt -d prueba.com --mask --max-results 1000 --csv-delimiter "|"
+```
 3. Generación masiva con múltiples elementos
-bash
-Copy
+```bash
 python mailfusion.py -d sistema.com -p '[ABC:2][year]["_"][123:4]' -o datos.json
+```
+
 🔧 Parámetros Principales
 Parámetro	Descripción
 -n/--names	Archivo con nombres (uno por línea)
@@ -78,4 +79,4 @@ Parámetro	Descripción
 -o/--output	Archivo de salida (.txt, .csv, .json)
 --mask	Enmascara los correos generados
 --max-results	Límite de resultados a generar
-📂 Estructura de Archivos
+
