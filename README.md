@@ -55,6 +55,7 @@ python mailfusion.py -l apellidos.txt -d empresa.com -p '[ABC][lastname]'
 ```
 # Usar plantilla predefinida
 python mailfusion.py -n nombres.txt -l apellidos.txt -d empresa.com -t first.last
+
 🎯 Ejemplos Avanzados
 1. Generar usuarios corporativos
 ```bash
@@ -71,9 +72,13 @@ python mailfusion.py -d sistema.com -p '[ABC:2][year]["_"][123:4]' -o datos.json
 
 🔧 Parámetros Principales
 Parámetro	Descripción
+
 -n/--names	Archivo con nombres (uno por línea)
+
 -l/--lastnames	Archivo con apellidos
+
 -d/--domain	Dominio para los correos (requerido)
+
 -p/--payload	Formato personalizado (ej: [ABC][lastname])
 -t/--template	Plantilla predefinida (firstlast, first.last)
 -o/--output	Archivo de salida (.txt, .csv, .json)
