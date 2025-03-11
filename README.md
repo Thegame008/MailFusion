@@ -61,7 +61,7 @@ python mailfusion.py -n nombres.txt -l apellidos.txt -d empresa.com -t first.las
 ```bash
 python mailfusion.py -n empleados.txt -d corporacion.com -p '[name][".123"]' --case lower -o usuarios.csv
 ```
-3. Combinaciones con seguridad
+2. Combinaciones con seguridad
 ```bash
 python mailfusion.py -l clientes.txt -d prueba.com --mask --max-results 1000 --csv-delimiter "|"
 ```
@@ -71,7 +71,7 @@ python mailfusion.py -d sistema.com -p '[ABC:2][year]["_"][123:4]' -o datos.json
 ```
 
 🔧 Parámetros Principales
-Parámetro	Descripción
+Parámetro	  Descripción
 
 -n/--names	Archivo con nombres (uno por línea)
 
